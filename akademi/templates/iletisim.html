@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+
+
+<body>
+
+  <div id="whatsapp">
+    <a href="https://wa.me/905327483718" target="_blank" id="toggle1" class="wtsapp">
+     <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Contact Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>İletişim Bilgileri</h2>
+          <ol>
+            <li><a href="{% url 'index' %}">Ana Sayfa</a></li>
+            <li>İletişim</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Adresimiz</h3>
+                  <p>Merkez Mahallesi, Şamlı Sokak, 38/C, Avcılar/İSTANBUL</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email</h3>
+                  <p>osmantskn@hotmail.com<br></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Bizi Arayın</h3>
+                  <p>(0532) 748 37 18<br></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="photo-container">
+            <img src="{% static 'img/akademi.jpg' %}" alt="Fotoğraf" class="photo">
+          </div>
+
+        </div>
+
+      </div>
+      
+    </section><!-- End Contact Section -->
+
+     <!-- ======= Map Section ======= -->
+     <section class="map mt-2">
+      <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=512&amp;height=380&amp;hl=en&amp;q=akademi dekor&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections Game</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:380px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:380px;}.gmap_iframe {height:380px!important;}</style></div>
+    </section><!-- End Map Section -->
+
+  </main><!-- End #main -->
+
+</body>
+
+</html>
+
+{% endblock %}
+```
