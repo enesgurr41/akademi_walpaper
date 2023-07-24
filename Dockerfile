@@ -14,7 +14,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Run Django migrations
-RUN cd ./core && python manage.py makemigrations && python manage.py migrate
+RUN python manage.py makemigrations && python manage.py migrate
 
 # Expose the application's port
 EXPOSE 8000
