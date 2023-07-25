@@ -108,20 +108,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # settings.py
 CSRF_TRUSTED_ORIGINS = [
-<<<<<<< HEAD
-    "https://enesgurr41-animated-robot-7j94gv44gqvfr5wx-8000.preview.app.github.dev",
-=======
-    "https://enesgurr41-solid-tribble-p5rqxjqqxgjc5q9-8000.preview.app.github.dev",
->>>>>>> f3689a71011237f2fbe288ec08131868af414a8a
+    "https://enesgurr41-crispy-waffle-6xg7j97x9rw35jr6-8000.preview.app.github.dev",
     # Diğer güvenilen kök URL'leri buraya ekleyin
 ]
 
 # settings.py
 CSRF_COOKIE_SAMESITE = None
-<<<<<<< HEAD
-=======
-
->>>>>>> f3689a71011237f2fbe288ec08131868af414a8a
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
