@@ -8,6 +8,7 @@ class duvar_Kagidi(models.Model):
         ('tas_desen', 'Taş Desen'),
         ('cocuk', 'Çocuk'),
         ('cicek_desen', 'Çiçek Desen'),
+        ('kircilli', 'Kırçıllı')
     )
 
     image = models.ImageField(upload_to='duvar_kagitlari/')

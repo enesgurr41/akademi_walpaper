@@ -106,6 +106,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# settings.py
+CSRF_TRUSTED_ORIGINS = [
+    "https://enesgurr41-animated-robot-7j94gv44gqvfr5wx-8000.preview.app.github.dev",
+    # Diğer güvenilen kök URL'leri buraya ekleyin
+]
+
+# settings.py
+CSRF_COOKIE_SAMESITE = None
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
