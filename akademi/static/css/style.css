@@ -199,51 +199,60 @@ outline: none;
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
+  left: 30px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: rgba(26, 65, 85, 0.8);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
 
+/* Her alt menü öğesi en az 100 piksel genişliğinde olacak ve ortalanacak. */
 .navbar .dropdown ul li {
-  min-width: 200px;
+  min-width: 100px;
+  text-align: center;
 }
 
+/* Alt menü öğelerinin stil özelliklerini belirliyoruz. */
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
+  display: block;
   text-transform: none;
-  color: #1c3745;
+  color: #ffffff;
 }
 
+/* Alt menü öğeleri içindeki simgelerin boyutunu ayarlıyoruz. */
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
 
+/* Alt menü öğelerine fare üzerine gelindiğinde ve seçiliyken renk değişikliği yapıyoruz. */
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
   color: #68A4C4;
 }
 
+/* Açılır menü öğesine fare üzerine gelindiğinde alt menüyü görünür hale getiriyoruz. */
 .navbar .dropdown:hover>ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
 }
 
+/* Açılır menü içinde alt bir alt menü (ikinci seviye alt menü) varsa onun stilini düzenliyoruz. */
 .navbar .dropdown .dropdown ul {
   top: 0;
   left: calc(100% - 30px);
   visibility: hidden;
 }
 
+/* İkinci seviye alt menüye fare üzerine gelindiğinde, onu görünür hale getiriyoruz. */
 .navbar .dropdown .dropdown:hover>ul {
   opacity: 1;
   top: 0;
@@ -251,11 +260,14 @@ outline: none;
   visibility: visible;
 }
 
+/* Ekran genişliği 1366 pikselden küçük olduğunda, mobil görünüm için gerekli stil düzenlemelerini yapıyoruz. */
 @media (max-width: 1366px) {
+  /* İkinci seviye alt menüyü sola doğru uzaklaştırarak mobil uyumlu hale getiriyoruz. */
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
 
+  /* İkinci seviye alt menüyü tamamen ekrandan çıkartıyoruz (gizliyoruz). */
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
@@ -273,16 +285,19 @@ outline: none;
   transition: 0.5s;
 }
 
+/* Show the mobile navigation toggle when the screen size is less than 991px */
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
   }
 
+  /* Hide the desktop navigation links when in mobile view */
   .navbar ul {
     display: none;
   }
 }
 
+/* Styling for the mobile navigation menu */
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -290,16 +305,18 @@ outline: none;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(17, 38, 48, 0.9);
+  background: rgba(47, 87, 105, 0.9);
   transition: 0.3s;
 }
 
+/* Styling for the mobile navigation toggle button */
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
+/* Styling for the mobile navigation links */
 .navbar-mobile ul {
   display: flex;
   flex-direction: column;
@@ -311,7 +328,7 @@ outline: none;
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #dae5eb;
+  background-color: #a8bbc4;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -330,11 +347,13 @@ outline: none;
   color: #68A4C4;
 }
 
+/* Styling for the "Get Started" button in mobile view */
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
 }
 
+/* Styling for the dropdown sub-menu in mobile view */
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
@@ -343,12 +362,12 @@ outline: none;
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: rgba(50, 94, 116, 0.8);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
 .navbar-mobile .dropdown ul li {
-  min-width: 200px;
+  min-width: 100px;
 }
 
 .navbar-mobile .dropdown ul a {
@@ -368,7 +387,6 @@ outline: none;
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
 
 /*--------------------------------------------------------------
 # Hero Section

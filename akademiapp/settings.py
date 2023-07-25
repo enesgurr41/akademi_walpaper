@@ -108,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # settings.py
 CSRF_TRUSTED_ORIGINS = [
-    "https://enesgurr41-crispy-waffle-6xg7j97x9rw35jr6-8000.preview.app.github.dev",
+    "https://enesgurr41-musical-space-winner-w6qw669x59cv459-8000.preview.app.github.dev",
     # Diğer güvenilen kök URL'leri buraya ekleyin
 ]
 
