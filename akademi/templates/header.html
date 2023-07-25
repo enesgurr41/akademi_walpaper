@@ -45,7 +45,14 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="{% url 'index' %}">Ana Sayfa</a></li>
-          <li><a href="{% url 'avcilar_duvar_kagidi-deposu-vinil' %}">Duvar Kağıdı</a></li>
+          <li class="dropdown"><a href="{% url 'avcilar_duvar_kagidi-deposu-vinil' %}"><span>Duvar Kağıdı</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Akadem1</a></li>
+              <li><a href="#">Akadem2</a></li>
+              <li><a href="#">Akadem3</a></li>
+              <li><a href="#">Akadem4</a></li>
+            </ul>
+          </li>
           <li><a href="{% url 'strpoyier-duvar-kaplama-fjg3x' %}">Duvar Paneli</a></li>
           <li><a href="{% url 'stropiyer-kartonpiyer-avcilar' %}">Stropiyer</a></li>
           <li><a href="{% url 'stropiyer-avcilar-tavan-kaplama' %}">Tavan Kaplama</a></li>
