@@ -1,24 +1,5 @@
 from django.db import models
 
-class duvar_Kagidi(models.Model):
-    IMAGE_CHOICES = (
-        ('duz', 'Düz'),
-        ('damask', 'Damask'),
-        ('cizgili', 'Çizgili'),
-        ('tas_desen', 'Taş Desen'),
-        ('cocuk', 'Çocuk'),
-        ('cicek_desen', 'Çiçek Desen'),
-        ('kircilli', 'Kırçıllı')
-    )
-
-    image = models.ImageField(upload_to='duvar_kagitlari/')
-    category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
-    price = models.CharField(max_length=10)
-    title = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.title
-
 class akadem1_Model(models.Model):
     IMAGE_CHOICES = (
         ('duz', 'Düz'),
@@ -76,7 +57,7 @@ class akadem3_Model(models.Model):
     def __str__(self):
         return self.title
 
-class serisonu_Model(models.Model):
+class akadem4_Model(models.Model):
     IMAGE_CHOICES = (
         ('duz', 'Düz'),
         ('damask', 'Damask'),
@@ -87,8 +68,16 @@ class serisonu_Model(models.Model):
         ('kircilli', 'Kırçıllı')
     )
 
-    image = models.ImageField(upload_to='serisonu_photo/')
+    image = models.ImageField(upload_to='akadem4_photo/')
     category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
+    price = models.CharField(max_length=10)
+    title = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title
+
+class serisonu_Model(models.Model):
+    image = models.ImageField(upload_to='serisonu_photo/')
     price = models.CharField(max_length=10)
     title = models.CharField(max_length=100)
 

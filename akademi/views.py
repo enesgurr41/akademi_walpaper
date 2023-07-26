@@ -1,36 +1,13 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import duvar_Kagidi
 from .models import duvar_Paneli
 from .models import akadem1_Model
 from .models import akadem2_Model
 from .models import akadem3_Model
+from .models import akadem4_Model
 from .models import serisonu_Model
 
-data = {
-    "duvar_kagidi": [
-        {
-            "image": "/duvar_kagitlari/27.jpg",
-            "category": "duz",
-            "price": "30",
-            "title": "efsane"
-        },
-        {
-            "image": "/duvar_kagitlari/60.jpg",
-            "category": "damask",
-            "price": "40",
-            "title": "baya iyi"
-        },
-        {
-            "image": "/duvar_kagitlari/103.jpg",
-            "category": "cizgili",
-            "price": "10",
-            "title": "çok güzel"
-        }
-    ]
-}
-
-data2 = {
+data1 = {
     "akadem1": [
         {
             "image": "/akadem1_photo/27.jpg",
@@ -53,7 +30,7 @@ data2 = {
     ]
 }
 
-data3 = {
+data2 = {
     "akadem2": [
         {
             "image": "/akadem2_photo/27.jpg",
@@ -76,7 +53,7 @@ data3 = {
     ]
 }
 
-data4 = {
+data3 = {
     "akadem3": [
         {
             "image": "/akadem3_photo/27.jpg",
@@ -99,25 +76,40 @@ data4 = {
     ]
 }
 
-data5 = {
-    "serisonu": [
+data4 = {
+    "akadem4": [
         {
-            "image": "/serisonu_photo/27.jpg",
+            "image": "/akadem4_photo/27.jpg",
             "category": "duz",
             "price": "79",
             "title": "efsane"
         },
         {
-            "image": "/serisonu_photo/60.jpg",
+            "image": "/akadem4_photo/60.jpg",
             "category": "damask",
             "price": "50",
             "title": "baya iyi"
         },
         {
-            "image": "/serisonu_photo/103.jpg",
+            "image": "/akadem4_photo/103.jpg",
             "category": "cizgili",
             "price": "80",
             "title": "çok güzel"
+        }
+    ]
+}
+
+data5 = {
+    "serisonu": [
+        {
+            "image": "/serisonu_photo/27.jpg",
+            "price": "79",
+            "title": "efsane"
+        },
+        {
+            "image": "/serisonu_photo/60.jpg",
+            "price": "50",
+            "title": "baya iyi"
         }
     ]
 }
@@ -141,13 +133,6 @@ data6 = {
 def index(request):
     return render(request, "index.html")
 
-def duvar_kagidi(request):
-    duvar_kagitlari = duvar_Kagidi.objects.all()
-    context =  {
-        "duvar_kagitlari": duvar_kagitlari
-    }
-    return render(request, "duvar_kagidi.html", context)
-
 def akadem1(request):
     akadem1_photo = akadem1_Model.objects.all()
     context =  {
@@ -168,6 +153,13 @@ def akadem3(request):
         "akadem3_photo": akadem3_photo
     }
     return render(request, "akadem3.html", context)
+
+def akadem4(request):
+    akadem4_photo = akadem4_Model.objects.all()
+    context =  {
+        "akadem4_photo": akadem4_photo
+    }
+    return render(request, "akadem4.html", context)
 
 def serisonu(request):
     serisonu_photo = serisonu_Model.objects.all()
