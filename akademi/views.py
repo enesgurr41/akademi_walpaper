@@ -2,6 +2,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from .models import duvar_Kagidi
 from .models import duvar_Paneli
+from .models import akadem1_Model
+from .models import akadem2_Model
+from .models import akadem3_Model
 
 data = {
     "duvar_kagidi": [
@@ -27,6 +30,75 @@ data = {
 }
 
 data2 = {
+    "akadem1": [
+        {
+            "image": "/akadem1_photo/27.jpg",
+            "category": "duz",
+            "price": "79",
+            "title": "efsane"
+        },
+        {
+            "image": "/akadem1_photo/60.jpg",
+            "category": "damask",
+            "price": "50",
+            "title": "baya iyi"
+        },
+        {
+            "image": "/akadem1_photo/103.jpg",
+            "category": "cizgili",
+            "price": "80",
+            "title": "çok güzel"
+        }
+    ]
+}
+
+data3 = {
+    "akadem2": [
+        {
+            "image": "/akadem2_photo/27.jpg",
+            "category": "duz",
+            "price": "79",
+            "title": "efsane"
+        },
+        {
+            "image": "/akadem2_photo/60.jpg",
+            "category": "damask",
+            "price": "50",
+            "title": "baya iyi"
+        },
+        {
+            "image": "/akadem2_photo/103.jpg",
+            "category": "cizgili",
+            "price": "80",
+            "title": "çok güzel"
+        }
+    ]
+}
+
+data4 = {
+    "akadem3": [
+        {
+            "image": "/akadem3_photo/27.jpg",
+            "category": "duz",
+            "price": "79",
+            "title": "efsane"
+        },
+        {
+            "image": "/akadem3_photo/60.jpg",
+            "category": "damask",
+            "price": "50",
+            "title": "baya iyi"
+        },
+        {
+            "image": "/akadem3_photo/103.jpg",
+            "category": "cizgili",
+            "price": "80",
+            "title": "çok güzel"
+        }
+    ]
+}
+
+data5 = {
     "duvar_paneli": [
         {
             "image": "/duvar_panelleri/113.png",
@@ -51,6 +123,27 @@ def duvar_kagidi(request):
         "duvar_kagitlari": duvar_kagitlari
     }
     return render(request, "duvar_kagidi.html", context)
+
+def akadem1(request):
+    akadem1_photo = akadem1_Model.objects.all()
+    context =  {
+        "akadem1_photo": akadem1_photo
+    }
+    return render(request, "akadem1.html", context)
+
+def akadem2(request):
+    akadem2_photo = akadem2_Model.objects.all()
+    context =  {
+        "akadem2_photo": akadem2_photo
+    }
+    return render(request, "akadem2.html", context)
+
+def akadem3(request):
+    akadem3_photo = akadem3_Model.objects.all()
+    context =  {
+        "akadem3_photo": akadem3_photo
+    }
+    return render(request, "akadem3.html", context)
 
 def duvar_paneli(request):
     duvar_panelleri = duvar_Paneli.objects.all()

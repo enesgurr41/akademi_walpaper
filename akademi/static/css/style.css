@@ -960,6 +960,258 @@ section {
 }
 
 /*--------------------------------------------------------------
+# akadem1
+--------------------------------------------------------------*/
+.akadem1 {
+  padding-bottom: 60px;
+}
+
+.akadem1 #portfolio-flters {
+  padding: 0;
+  margin: 0 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+.akadem1 #portfolio-flters li {
+  cursor: pointer;
+  margin: 0 12px 5px 12px;
+  display: inline-block;
+  padding: 0 4px 6px 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #444;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.akadem1 #portfolio-flters li:hover,
+.akadem1 #portfolio-flters li.filter-active {
+  border-color: #68A4C4;
+  color: #68A4C4;
+}
+
+.akadem1 .portfolio-item {
+  background: #1e4356;
+  overflow: hidden;
+  min-height: 200px;
+  position: relative;
+  border-radius: 4px;
+  margin: 0 0 30px 0;
+}
+
+.akadem1 .portfolio-item img {
+  transition: all 0.3s ease-in-out;
+  min-height: unset;
+}
+
+.akadem1 .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s linear;
+  text-align: center;
+  top: 10%;
+  left: 0;
+  right: 0;
+}
+
+.akadem1 .portfolio-item .portfolio-info h3 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.akadem1 .portfolio-item .portfolio-info a i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.akadem1 .portfolio-item .portfolio-info a i:hover {
+  color: white;
+}
+
+.akadem1 .portfolio-item:hover img {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.akadem1 .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  top: calc(50% - 30px);
+}
+
+/*--------------------------------------------------------------
+# akadem2
+--------------------------------------------------------------*/
+.akadem2 {
+  padding-bottom: 60px;
+}
+
+.akadem2 #portfolio-flters {
+  padding: 0;
+  margin: 0 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+.akadem2 #portfolio-flters li {
+  cursor: pointer;
+  margin: 0 12px 5px 12px;
+  display: inline-block;
+  padding: 0 4px 6px 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #444;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.akadem2 #portfolio-flters li:hover,
+.akadem2 #portfolio-flters li.filter-active {
+  border-color: #68A4C4;
+  color: #68A4C4;
+}
+
+.akadem2 .portfolio-item {
+  background: #1e4356;
+  overflow: hidden;
+  min-height: 200px;
+  position: relative;
+  border-radius: 4px;
+  margin: 0 0 30px 0;
+}
+
+.akadem2 .portfolio-item img {
+  transition: all 0.3s ease-in-out;
+  min-height: unset;
+}
+
+.akadem2 .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s linear;
+  text-align: center;
+  top: 10%;
+  left: 0;
+  right: 0;
+}
+
+.akadem2 .portfolio-item .portfolio-info h3 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.akadem2 .portfolio-item .portfolio-info a i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.akadem2 .portfolio-item .portfolio-info a i:hover {
+  color: white;
+}
+
+.akadem2 .portfolio-item:hover img {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.akadem2 .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  top: calc(50% - 30px);
+}
+
+/*--------------------------------------------------------------
+# akadem3
+--------------------------------------------------------------*/
+.akadem3 {
+  padding-bottom: 60px;
+}
+
+.akadem3 #portfolio-flters {
+  padding: 0;
+  margin: 0 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+.akadem3 #portfolio-flters li {
+  cursor: pointer;
+  margin: 0 12px 5px 12px;
+  display: inline-block;
+  padding: 0 4px 6px 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #444;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.akadem3 #portfolio-flters li:hover,
+.akadem3 #portfolio-flters li.filter-active {
+  border-color: #68A4C4;
+  color: #68A4C4;
+}
+
+.akadem3 .portfolio-item {
+  background: #1e4356;
+  overflow: hidden;
+  min-height: 200px;
+  position: relative;
+  border-radius: 4px;
+  margin: 0 0 30px 0;
+}
+
+.akadem3 .portfolio-item img {
+  transition: all 0.3s ease-in-out;
+  min-height: unset;
+}
+
+.akadem3 .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s linear;
+  text-align: center;
+  top: 10%;
+  left: 0;
+  right: 0;
+}
+
+.akadem3 .portfolio-item .portfolio-info h3 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.akadem3 .portfolio-item .portfolio-info a i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.akadem3 .portfolio-item .portfolio-info a i:hover {
+  color: white;
+}
+
+.akadem3 .portfolio-item:hover img {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.akadem3 .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  top: calc(50% - 30px);
+}
+
+/*--------------------------------------------------------------
 # citalama_dekor
 --------------------------------------------------------------*/
 .citalama_dekor {
@@ -1209,7 +1461,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# duvar_kagidi
+# tavan_kaplama
 --------------------------------------------------------------*/
 .tavan_kaplama {
   padding-bottom: 60px;

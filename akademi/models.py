@@ -19,6 +19,63 @@ class duvar_Kagidi(models.Model):
     def __str__(self):
         return self.title
 
+class akadem1_Model(models.Model):
+    IMAGE_CHOICES = (
+        ('duz', 'Düz'),
+        ('damask', 'Damask'),
+        ('cizgili', 'Çizgili'),
+        ('tas_desen', 'Taş Desen'),
+        ('cocuk', 'Çocuk'),
+        ('cicek_desen', 'Çiçek Desen'),
+        ('kircilli', 'Kırçıllı')
+    )
+
+    image = models.ImageField(upload_to='akadem1_photo/')
+    category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
+    price = models.CharField(max_length=10)
+    title = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title
+
+class akadem2_Model(models.Model):
+    IMAGE_CHOICES = (
+        ('duz', 'Düz'),
+        ('damask', 'Damask'),
+        ('cizgili', 'Çizgili'),
+        ('tas_desen', 'Taş Desen'),
+        ('cocuk', 'Çocuk'),
+        ('cicek_desen', 'Çiçek Desen'),
+        ('kircilli', 'Kırçıllı')
+    )
+
+    image = models.ImageField(upload_to='akadem2_photo/')
+    category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
+    price = models.CharField(max_length=10)
+    title = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title
+
+class akadem3_Model(models.Model):
+    IMAGE_CHOICES = (
+        ('duz', 'Düz'),
+        ('damask', 'Damask'),
+        ('cizgili', 'Çizgili'),
+        ('tas_desen', 'Taş Desen'),
+        ('cocuk', 'Çocuk'),
+        ('cicek_desen', 'Çiçek Desen'),
+        ('kircilli', 'Kırçıllı')
+    )
+
+    image = models.ImageField(upload_to='akadem3_photo/')
+    category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
+    price = models.CharField(max_length=10)
+    title = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title
+
 class duvar_Paneli(models.Model):
     
     image = models.ImageField(upload_to='duvar_panelleri/')
