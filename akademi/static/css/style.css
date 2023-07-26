@@ -219,7 +219,7 @@ outline: none;
 
 /* Alt menü öğelerinin stil özelliklerini belirliyoruz. */
 .navbar .dropdown ul a {
-  padding: 10px 20px;
+  padding:5px 10px;
   font-size: 14px;
   display: block;
   text-transform: none;
@@ -228,7 +228,7 @@ outline: none;
 
 /* Alt menü öğeleri içindeki simgelerin boyutunu ayarlıyoruz. */
 .navbar .dropdown ul a i {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 /* Alt menü öğelerine fare üzerine gelindiğinde ve seçiliyken renk değişikliği yapıyoruz. */
