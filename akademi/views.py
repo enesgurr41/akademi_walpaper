@@ -5,6 +5,7 @@ from .models import duvar_Paneli
 from .models import akadem1_Model
 from .models import akadem2_Model
 from .models import akadem3_Model
+from .models import serisonu_Model
 
 data = {
     "duvar_kagidi": [
@@ -99,6 +100,29 @@ data4 = {
 }
 
 data5 = {
+    "serisonu": [
+        {
+            "image": "/serisonu_photo/27.jpg",
+            "category": "duz",
+            "price": "79",
+            "title": "efsane"
+        },
+        {
+            "image": "/serisonu_photo/60.jpg",
+            "category": "damask",
+            "price": "50",
+            "title": "baya iyi"
+        },
+        {
+            "image": "/serisonu_photo/103.jpg",
+            "category": "cizgili",
+            "price": "80",
+            "title": "çok güzel"
+        }
+    ]
+}
+
+data6 = {
     "duvar_paneli": [
         {
             "image": "/duvar_panelleri/113.png",
@@ -144,6 +168,13 @@ def akadem3(request):
         "akadem3_photo": akadem3_photo
     }
     return render(request, "akadem3.html", context)
+
+def serisonu(request):
+    serisonu_photo = serisonu_Model.objects.all()
+    context =  {
+        "serisonu_photo": serisonu_photo
+    }
+    return render(request, "serisonu.html", context)
 
 def duvar_paneli(request):
     duvar_panelleri = duvar_Paneli.objects.all()
