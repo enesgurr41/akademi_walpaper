@@ -12,18 +12,21 @@ data1 = {
         {
             "image": "/akadem1_photo/27.jpg",
             "category": "duz",
+            "category2": "Akadem1 Gold",
             "price": "79",
             "title": "efsane"
         },
         {
             "image": "/akadem1_photo/60.jpg",
             "category": "damask",
+            "category2": "Akadem1 For",
             "price": "50",
             "title": "baya iyi"
         },
         {
             "image": "/akadem1_photo/103.jpg",
             "category": "cizgili",
+            "category2": "Akadem1 Black",
             "price": "80",
             "title": "çok güzel"
         }
