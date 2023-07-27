@@ -879,7 +879,7 @@ section {
 # akadem1
 --------------------------------------------------------------*/
 .akadem1 {
-  padding-bottom: 60px;
+  margin-top: -80px;
 }
 
 .akadem1 #portfolio-flters {
@@ -955,6 +955,90 @@ section {
 }
 
 .akadem1 .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  top: calc(50% - 30px);
+}
+
+/*--------------------------------------------------------------
+# akadem1_details
+--------------------------------------------------------------*/
+.akadem1_details {
+  margin-top: -30px;
+}
+
+.akadem1_details #portfolio-flters {
+  padding: 0;
+  margin: 0 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+.akadem1_details #portfolio-flters li {
+  cursor: pointer;
+  margin: 0 12px 5px 12px;
+  display: inline-block;
+  padding: 0 4px 6px 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #444;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.akadem1_details #portfolio-flters li:hover,
+.akadem1_details #portfolio-flters li.filter-active {
+  border-color: #68A4C4;
+  color: #68A4C4;
+}
+
+.akadem1_details .portfolio-item {
+  background: #1e4356;
+  overflow: hidden;
+  min-height: 200px;
+  position: relative;
+  border-radius: 4px;
+  margin: 0 0 30px 0;
+}
+
+.akadem1_details .portfolio-item img {
+  transition: all 0.3s ease-in-out;
+  min-height: unset;
+}
+
+.akadem1_details .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s linear;
+  text-align: center;
+  top: 10%;
+  left: 0;
+  right: 0;
+}
+
+.akadem1_details .portfolio-item .portfolio-info h3 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.akadem1_details .portfolio-item .portfolio-info a i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.akadem1_details .portfolio-item .portfolio-info a i:hover {
+  color: white;
+}
+
+.akadem1_details .portfolio-item:hover img {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.akadem1_details .portfolio-item:hover .portfolio-info {
   opacity: 1;
   top: calc(50% - 30px);
 }
