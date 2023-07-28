@@ -108,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # settings.py
 CSRF_TRUSTED_ORIGINS = [
-    "https://enesgurr41-fictional-space-adventure-gvqwg4wwvrgfv4j-8000.preview.app.github.dev",
+    "https://enesgurr41-automatic-space-doodle-6xg7j97x94qh497r-8000.preview.app.github.dev",
     # Diğer güvenilen kök URL'leri buraya ekleyin
 ]
 

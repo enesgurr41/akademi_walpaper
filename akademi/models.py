@@ -11,15 +11,8 @@ class akadem1_Model(models.Model):
         ('kircilli', 'Kırçıllı')
     )
 
-    IMAGE_CHOICES2 = (
-        ('akadem1_gold', 'Akadem1 Gold'),
-        ('akadem1_for', 'Akadem1 For'),
-        ('akadem1_black', 'Akadem1 Black')
-    )
-
     image = models.ImageField(upload_to='akadem1_photo/')
     category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
-    category2 = models.CharField(choices=IMAGE_CHOICES2, max_length=20)
     price = models.CharField(max_length=10)
     title = models.CharField(max_length=100)
 
