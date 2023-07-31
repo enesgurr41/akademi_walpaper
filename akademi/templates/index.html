@@ -45,7 +45,7 @@
   <main id="main">
 
     <!-- ======= Why Us Section ======= -->
-    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+    {% comment %} <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
       <div class="container">
 
         <div class="row">
@@ -72,7 +72,7 @@
         </div>
 
       </div>
-    </section><!-- End Why Us Section -->
+    </section><!-- End Why Us Section --> {% endcomment %}
 
     <!-- ======= Features Section ======= -->
     <section class="features">
@@ -81,6 +81,26 @@
         <div class="section-title">
           <h2>Akademi Dekor</h2>
           <p>Avcılar Duvar Kağıdı ve Salon Çıtası Deposu</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <a href="{% url 'avcilar_duvar_kagidi-deposu-akadem1' %}">
+              <img src="{% static 'img/duvar_kagidi.jpg' %}" class="img-fluid" alt="">
+            </a>
+          </div>
+          
+          <div class="col-md-7 pt-4">
+            <h3>Duvar Kağıtları</h3>
+            <p class="fst-italic">
+              Duvarlarınızı renk ve desenle hayatlandırın - Geniş koleksiyonumuzdaki duvar kağıtlarıyla evinize yeni bir soluk getirin.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Hızlı Teslimat Ve Uzman Kadro</li>
+              <li><i class="bi bi-check"></i> Uygun Fiyat</li>
+              <li><i class="bi bi-check"></i> Binlerce Renk Ve Desen Seçeneği</li>
+            </ul>
+          </div>
         </div>
 
         <div class="row" data-aos="fade-up">
