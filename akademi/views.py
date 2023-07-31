@@ -6,6 +6,7 @@ from .models import akadem2_Model
 from .models import akadem3_Model
 from .models import akadem4_Model
 from .models import serisonu_Model
+from .models import blog_Model
 
 data1 = {
     "akadem1": [
@@ -129,6 +130,21 @@ data6 = {
     ]
 }
 
+data7 = {
+    "blog": [
+        {
+            "image": "/blog_photo/blog1.jpg",
+            "title": "duvar kağıdı",
+            "description": "description yazısı"
+        },
+        {
+            "image": "/blog_photo/blog.jpg",
+            "title": "duvar çıtası",
+            "description": "description yazısı"
+        }
+    ]
+}
+
 # Create your views here.
 def index(request):
     return render(request, "index.html")
@@ -175,6 +191,13 @@ def duvar_paneli(request):
     }
     return render(request, "duvar_paneli.html", context)
 
+def blog(request):
+    blog_photo = blog_Model.objects.all()
+    context =  {
+        "blog_photo": blog_photo
+    }
+    return render(request, "blog.html", context)
+
 def stropiyer(request):
     return render(request, "stropiyer.html")
 
@@ -186,6 +209,3 @@ def citalama_dekor(request):
 
 def iletisim(request):
     return render(request, "iletisim.html")
-
-def blog(request):
-    return render(request, "blog.html")

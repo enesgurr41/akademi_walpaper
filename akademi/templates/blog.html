@@ -34,83 +34,29 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row">
-
+          
           <div class="col-lg-8 entries">
-
+            {% for blog in blog_photo %}
             <article class="entry">
-
+              
               <div class="entry-img">
-                <img src="{% static 'img/blog/blog-1.jpg' %}" alt="" class="img-fluid">
+                <img src="{{ blog.image.url }}" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
-                <a>Duvar Kağıdı Modelleri</a>
+                <a>{{blog.title}}</a>
               </h2>
 
               <div class="entry-content">
                 <p>
-                  Akademi Dekor dekorasyon uzmanınız da her türlü ürün ve duvar kağıdı uygulama hizmeti alabilirsiniz.Duvar kağıdı modellerimizi www.akademidekor.com'da detaylı olarak inceleyebilir fakat online satın alamazsınız. Duvar kağıdı çeşitlerimiz; ithal duvar kağıdı, yerli duvar kağıtları, düz duvar kağıtları, desenli duvar kağıtları, damask desenli duvar kağıdı, taş desenli duvar kağıdı, çocuk odası duvar kağıdı, genç odası duvar kağıdı, mutfak desenli duvar kağıt, boyanabilir duvar kağıtları, tavan duvar kağıdı, mantar görünümlü veya mantar desenli ithal duvar kağıtları, 3D boyutlu duvar kağıdı, kişiye özel baskı duvar kağıtları, çiçekli duvar kağıtları, proje duvar kağıtları ve dilediğiniz görseli, size özel resimlerinizi gönderin duvar kağıdı olarak duvarlarınıza tarzınızı yansıtabilirsiniz.
+                  {{blog.description}}
                 </p>
               </div>
-
+              
             </article><!-- End blog entry -->
-
-            <article class="entry">
-
-              <div class="entry-img">
-                <img src="{% static 'img/blog/blog-2.jpg' %}" alt="" class="img-fluid">
-              </div>
-
-              <h2 class="entry-title">
-                <a>Saray Tavan Modelleri</a>
-              </h2>
-
-              <div class="entry-content">
-                <p>
-                  Osmanlı Saray tavan ürünleri kokusuzdur, uygulaması kolaydır. Birinci sınıf kalite malzemeden üretilmiştir. Tozsuz ve hasar vermeden kısa sürede montajı yapılır. Kolayca sökülebilir ve hafif malzemeden üretildiği için kolaylıkla taşınabilmektedir. Poliüretan malzemeden üretilmiştir. Saray tavan ürünlerinde Altın Dikdörtgen Saray Tavan, Beyaza Altın Saray Tavan, Eskitme Saray Tavan, Bordo Altın Saray Tavan, Patina Saray Tavan ve Gümüş Saray Tavan renklerimiz mevcuttur. Saray tavan ürünlerinin kare saray tavan, oval saray tavan, dikdörtgen saray tavan, yıldız saray tavan şeklinde modelleri bulunmaktadır. Ev veya iş yerinizin havasını canlandırabilir ve derinlik katabilirsiniz. Zengin model seçenekleri ile kendi stilinizi oluşturup mükemmel bir kombinasyon sağlayabilirsiniz. Saray tavanlarınızı kartonpiyer, çıta ve motifler ile farklı konseptler kullanılarak Osmanlı ihtişamını yansıtan bir dekorasyon sağlayabilirsiniz.
-                </p>
-              </div>
-
-            </article><!-- End blog entry -->
-
-            <article class="entry">
-
-              <div class="entry-img">
-                <img src="{% static 'img/blog/blog-3.jpg' %}" alt="" class="img-fluid">
-              </div>
-
-              <h2 class="entry-title">
-                <a>Duvar Çıtası</a>
-              </h2>
-
-              <div class="entry-content">
-                <p>
-                  Dekorasyon demek bir yaşam alanını eskisinden farklı hale getirmek demektir. Boyanabilir Duvar Çıtası ile birlikte sizlerde yaşam alanlarınızda farklılık yaratabilirsiniz. Boyanabilir Duvar Çıtası darbelere karşı dayanıklı olup su ve nemden etkilenmez. Boyanabilir Duvar Çıtası Eni; 2,5cm,3cm,4cm,6cm,7cm,8cm,11cm ve 12cm’dir. Boyanabilir Duvar Çıtasının boyu:2,40cm’dir. Boyanabilir Duvar Çıtası ile evlerinizi, ofislerinizi, restoranlarınızı , kafelerinizi, otellerinizi, mağazalarınızı, alışveriş merkezlerinizi vb. alanlarınızı gelin hep birlikte tasarlayalım. Boyanabilir Duvar Çıtasını dilediğiniz ölçülerde 45 derece ya da düz bir şekilde kesebilirsiniz. Daha sonra çivi tabancası veya hızlı kuruyan silikon ile uygulayabilirsiniz. Uygulamasını yaptıktan sonra 45’lik kesim yerlerini, birleşim yerlerini ve duvarınızdan kaynaklı boşlukları beyaz mastik ile doldurabilirsiniz. Montajını sağladıktan sonra dilerseniz ham bir şekilde ya da dilediğiniz iç cephe boyasıyla boyama işlemini yapabilirsiniz.
-                </p>
-              </div>
-
-            </article><!-- End blog entry -->
-
-            <article class="entry">
-
-              <div class="entry-img">
-                <img src="{% static 'img/blog/duvar-çıtası.jpg' %}" alt="" class="img-fluid">
-              </div>
-
-              <h2 class="entry-title">
-                <a>Stropiyer</a>
-              </h2>
-
-              <div class="entry-content">
-                <p>
-                  Ev dekorasyonuna yeni bir boyut getiren stropiyer ürünleri, poliüretan köpükten imal edilen, uygulaması son derece pratik ve estetik ürünler olarak ilgi çekiyor. Kartonpiyerin alternatifi olan stropiyer ürünlerin pek çok farklı çeşidi bulunuyor. Çeşit çeşit stropiyer modellerinin kullanıcı ve uygulayıcı açısından pek çok avantajı bulunuyor. Tavan kaplama ve dekorasyon ürünü olan stropiyer modelleri, iyi bir uygulama sonrasında tavanları adeta bir sanat eseri haline getiriyor. Öncelikle ustaların çok önemsediği kalıcılık konusunda stropiyer iyi bir sınav veriyor. Uzman eller tarafından uygulanan ve yapıştırılan stropiyer ürünleri tavan yüzeyinden asla ayrılmıyor ve düşmüyor. Hafif olmasından dolayı mükemmel bir şekilde tutunuyor. Ayrıca yapısında su bulunmayan stropiyer ürünler zaman içerisinde renk değiştirmiyor ve sararmıyor. Böylece uygulandığı günkü gibi beyaz ev temiz görünümünü yıllarca aynı güzellikte muhafaza ediyor. Stropiyer modelleri farklı mekanların hemen tüm bölüm ve odalarının tavanlarında rahatlıkla kullanılabiliyor. Salon, oturma odası, yatak odası gibi kısımlarda mükemmel bir tavan görünümü sağladığı gibi banyo tavanlarında dahi şık ve temiz görünümü tamamlıyor. Strafor yapısından dolayı sudan, buhardan, nemden etkilenmeyen stropiyerler banyoların zevkli bir havaya bürünmesini sağlıyor. Stropiyer tavan kaplama ürünlerinin büyük bir avantajı da yanmaya karşı dayanıklı ve korunaklı olması. Zor alev alan bir ürün olan stropiyer güvenle kullanılabiliyor. Ustalar tarafından çok kısa sürede kolayca tavanlara uygulanan stropiyer ürünler, kolay yapışma özelliklerinden ötürü ev sahipleri tarafından bile uygulanabiliyor. Evi ile ilgilenmeye meraklı ve özenli ev sahipleri güvenli bir merdiven yardımıyla, stropiyerleri rahatlıkla dilediği odanın tavanına uygulayabiliyor. Alçı esaslı olmayan, temiz ve döküntüye sebebiyet vermeyen bir malzeme olmasından dolayı stropiyer uygulama esnasında etrafı kirletmiyor. Farklı desen ve motiflerle bezenen stropiyer modelleri, istenirse plastik ve su bazlı boyalarla boyanabiliyor. Hafif olmasından dolayı nakliyesi kolay gerçekleşen, tamamen sağlıklı olup zararlı madde içermeyen stropiyer ürünler, binanın ömrü kadar uzun bir süre boyunca kullanılabiliyor. Stropiyer modelleri fiyatları ise klasik sistemdeki diğer ürünlere nispetle çok avantajlı ve uygun bir düzeyde bulunuyor. Tüm bir dairenin montajının dahi bir günde rahatlıkla tamamlanabildiği stropiyer ürünler, dekoratif özellikleri dolayısıyla mekanlara değer katıyor.  Yıllar yılı tavanların aynı şık ve estetik görünümünü korumasına yardımcı oluyor. Siz de evinize yeni ve tertemiz bir görünüm kazandırmak için, stropiyer modellerini yakından inceleyebilir, ihtiyacınız olan ürünleri kolayca satın alabilirsiniz.
-                </p>
-              </div>
-
-            </article><!-- End blog entry -->
-
+            {% endfor %}
           </div><!-- End blog entries list -->
-
+          
         </div>
 
       </div>
