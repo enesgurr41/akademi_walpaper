@@ -8,7 +8,8 @@ class akadem1_Model(models.Model):
         ('tas_desen', 'Taş Desen'),
         ('cocuk', 'Çocuk'),
         ('cicek_desen', 'Çiçek Desen'),
-        ('kircilli', 'Kırçıllı')
+        ('kircilli', 'Kırçıllı'),
+        ('3d_poster', '3D Poster')
     )
 
     image = models.ImageField(upload_to='akadem1_photo/')
@@ -27,7 +28,8 @@ class akadem2_Model(models.Model):
         ('tas_desen', 'Taş Desen'),
         ('cocuk', 'Çocuk'),
         ('cicek_desen', 'Çiçek Desen'),
-        ('kircilli', 'Kırçıllı')
+        ('kircilli', 'Kırçıllı'),
+        ('3d_poster', '3D Poster')
     )
 
     image = models.ImageField(upload_to='akadem2_photo/')
@@ -46,7 +48,8 @@ class akadem3_Model(models.Model):
         ('tas_desen', 'Taş Desen'),
         ('cocuk', 'Çocuk'),
         ('cicek_desen', 'Çiçek Desen'),
-        ('kircilli', 'Kırçıllı')
+        ('kircilli', 'Kırçıllı'),
+        ('3d_poster', '3D Poster')
     )
 
     image = models.ImageField(upload_to='akadem3_photo/')
@@ -65,7 +68,8 @@ class akadem4_Model(models.Model):
         ('tas_desen', 'Taş Desen'),
         ('cocuk', 'Çocuk'),
         ('cicek_desen', 'Çiçek Desen'),
-        ('kircilli', 'Kırçıllı')
+        ('kircilli', 'Kırçıllı'),
+        ('3d_poster', '3D Poster')
     )
 
     image = models.ImageField(upload_to='akadem4_photo/')
