@@ -186,3 +186,6 @@ def citalama_dekor(request):
 
 def iletisim(request):
     return render(request, "iletisim.html")
+
+def blog(request):
+    return render(request, "blog.html")
