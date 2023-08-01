@@ -18,6 +18,7 @@ urlpatterns = [
     path("salon-çıta-koridor", views.citalama_dekor, name="salon-cita-koridor"),
     path("iletisim", views.iletisim, name="iletisim"),
     path("blog", views.blog, name="blog"),
+    path("avcilar-duvar-kagidi-deposu-poster", views.poster, name="avcilar_duvar_kagidi-deposu-poster"),
     
 ]
 

@@ -7,6 +7,7 @@ from .models import akadem3_Model
 from .models import akadem4_Model
 from .models import serisonu_Model
 from .models import blog_Model
+from .models import poster_Model
 
 data1 = {
     "akadem1": [
@@ -145,6 +146,21 @@ data7 = {
     ]
 }
 
+data8 = {
+    "poster": [
+        {
+            "image": "/poster_photo/poster.jpg",
+            "title": "Poster",
+            "description": "description yazısı"
+        },
+        {
+            "image": "/poster_photo/poster1.jpg",
+            "title": "duvar çıtası",
+            "description": "description yazısı"
+        }
+    ]
+}
+
 # Create your views here.
 def index(request):
     return render(request, "index.html")
@@ -190,6 +206,13 @@ def duvar_paneli(request):
         "duvar_panelleri": duvar_panelleri
     }
     return render(request, "duvar_paneli.html", context)
+
+def poster(request):
+    poster_photo = poster_Model.objects.all()
+    context =  {
+        "poster_photo": poster_photo
+    }
+    return render(request, "poster.html", context)
 
 def blog(request):
     blog_photo = blog_Model.objects.all()

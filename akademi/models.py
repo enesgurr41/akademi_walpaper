@@ -9,7 +9,7 @@ class akadem1_Model(models.Model):
         ('cocuk', 'Çocuk'),
         ('cicek_desen', 'Çiçek Desen'),
         ('kircilli', 'Kırçıllı'),
-        ('3d_poster', '3D Poster')
+        ('mermer', 'Mermer'),
     )
 
     image = models.ImageField(upload_to='akadem1_photo/')
@@ -28,8 +28,7 @@ class akadem2_Model(models.Model):
         ('tas_desen', 'Taş Desen'),
         ('cocuk', 'Çocuk'),
         ('cicek_desen', 'Çiçek Desen'),
-        ('kircilli', 'Kırçıllı'),
-        ('3d_poster', '3D Poster')
+        ('kircilli', 'Kırçıllı')
     )
 
     image = models.ImageField(upload_to='akadem2_photo/')
@@ -48,8 +47,7 @@ class akadem3_Model(models.Model):
         ('tas_desen', 'Taş Desen'),
         ('cocuk', 'Çocuk'),
         ('cicek_desen', 'Çiçek Desen'),
-        ('kircilli', 'Kırçıllı'),
-        ('3d_poster', '3D Poster')
+        ('kircilli', 'Kırçıllı')
     )
 
     image = models.ImageField(upload_to='akadem3_photo/')
@@ -68,8 +66,7 @@ class akadem4_Model(models.Model):
         ('tas_desen', 'Taş Desen'),
         ('cocuk', 'Çocuk'),
         ('cicek_desen', 'Çiçek Desen'),
-        ('kircilli', 'Kırçıllı'),
-        ('3d_poster', '3D Poster')
+        ('kircilli', 'Kırçıllı')
     )
 
     image = models.ImageField(upload_to='akadem4_photo/')
@@ -91,6 +88,15 @@ class serisonu_Model(models.Model):
 class duvar_Paneli(models.Model):
     
     image = models.ImageField(upload_to='duvar_panelleri/')
+    price = models.CharField(max_length=10)
+    title = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title
+    
+class poster_Model(models.Model):
+    
+    image = models.ImageField(upload_to='poster_photo/')
     price = models.CharField(max_length=10)
     title = models.CharField(max_length=100)
 
