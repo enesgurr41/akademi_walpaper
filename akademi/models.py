@@ -25,8 +25,6 @@ class akadem2_Model(models.Model):
         ('duz', 'Düz'),
         ('damask', 'Damask'),
         ('cizgili', 'Çizgili'),
-        ('tas_desen', 'Taş Desen'),
-        ('cocuk', 'Çocuk'),
         ('cicek_desen', 'Çiçek Desen'),
         ('kircilli', 'Kırçıllı')
     )
