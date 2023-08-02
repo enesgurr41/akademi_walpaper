@@ -97,7 +97,7 @@ class duvar_Paneli(models.Model):
 class poster_Model(models.Model):
     
     image = models.ImageField(upload_to='poster_photo/')
-    price = models.CharField(max_length=10)
+    price = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
 
     def __str__(self):
@@ -113,19 +113,8 @@ class blog_Model(models.Model):
         return self.title
 
 
-class stropiyer(models.Model):
-    IMAGE_CHOICES = (
-        ('dufghfgz', 'Düfghz'),
-        ('dafghmask', 'Dafghmask'),
-        ('csfghizgili', 'Çizgfghili'),
-        ('tas_sfghdesen', 'Taş gfhDesen'),
-        ('cocgsdfuk', 'Çofgscuk'),
-        ('cicek_sdfgdesen', 'Çiçek sdfgDesen'),
-    )
-
-    image = models.ImageField(upload_to='stropiyerler/')
-    category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
-    price = models.CharField(max_length=10)
+class stropiyer_Model(models.Model):
+    image = models.ImageField(upload_to='stropiyer_photo/')
     title = models.CharField(max_length=100)
 
     def __str__(self):

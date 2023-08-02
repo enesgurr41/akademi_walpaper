@@ -8,6 +8,7 @@ from .models import akadem4_Model
 from .models import serisonu_Model
 from .models import blog_Model
 from .models import poster_Model
+from .models import stropiyer_Model
 
 data1 = {
     "akadem1": [
@@ -155,7 +156,22 @@ data8 = {
         },
         {
             "image": "/poster_photo/poster1.jpg",
-            "title": "duvar çıtası",
+            "title": "Poster1",
+            "description": "description yazısı"
+        }
+    ]
+}
+
+data9 = {
+    "stropiyer": [
+        {
+            "image": "/stropiyer_photo/stropiyer.jpg",
+            "title": "Stropiyer",
+            "description": "description yazısı"
+        },
+        {
+            "image": "/stropiyer_photo/stropiyer1.jpg",
+            "title": "Stropiyer1",
             "description": "description yazısı"
         }
     ]
@@ -222,7 +238,11 @@ def blog(request):
     return render(request, "blog.html", context)
 
 def stropiyer(request):
-    return render(request, "stropiyer.html")
+    stropiyer_photo = stropiyer_Model.objects.all()
+    context =  {
+        "stropiyer_photo": stropiyer_photo
+    }
+    return render(request, "stropiyer.html", context)
 
 def tavan_kaplama(request):
     return render(request, "tavan_kaplama.html")
