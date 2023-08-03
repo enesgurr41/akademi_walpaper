@@ -14,7 +14,7 @@ class akadem1_Model(models.Model):
 
     image = models.ImageField(upload_to='akadem1_photo/')
     category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
-    price = models.CharField(max_length=10)
+    price = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
 
     def __str__(self):
@@ -31,7 +31,7 @@ class akadem2_Model(models.Model):
 
     image = models.ImageField(upload_to='akadem2_photo/')
     category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
-    price = models.CharField(max_length=10)
+    price = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
 
     def __str__(self):
@@ -50,7 +50,7 @@ class akadem3_Model(models.Model):
 
     image = models.ImageField(upload_to='akadem3_photo/')
     category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
-    price = models.CharField(max_length=10)
+    price = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
 
     def __str__(self):
@@ -69,7 +69,7 @@ class akadem4_Model(models.Model):
 
     image = models.ImageField(upload_to='akadem4_photo/')
     category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
-    price = models.CharField(max_length=10)
+    price = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
 
     def __str__(self):
@@ -77,7 +77,7 @@ class akadem4_Model(models.Model):
 
 class serisonu_Model(models.Model):
     image = models.ImageField(upload_to='serisonu_photo/')
-    price = models.CharField(max_length=10)
+    price = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
 
     def __str__(self):
@@ -95,7 +95,7 @@ class duvar_Paneli(models.Model):
 class aka_Kids(models.Model):
 
     image = models.ImageField(upload_to='akakids_photo/')
-    price = models.CharField(max_length=10)
+    price = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
 
     def __str__(self):
@@ -141,17 +141,14 @@ class tavan_Kaplama(models.Model):
 
 class citalama_Dekor(models.Model):
     IMAGE_CHOICES = (
-        ('duafdgz', 'Düafgz'),
-        ('dafagmask', 'Damafask'),
-        ('cizfgili', 'Çiagzgili'),
-        ('tas_agagdesen', 'Taş agDesen'),
-        ('cocaguk', 'Çoafcuk'),
-        ('cicek_afdgdesen', 'Çiçekag Desen'),
+        ('salon', 'Salon Çıtası'),
+        ('koridor', 'Koridor Çıtası'),
+        ('yatak', 'Yatak Odası Çıtası')
     )
 
     image = models.ImageField(upload_to='salon_citalari/')
     category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
-    price = models.CharField(max_length=10)
+    price = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
 
     def __str__(self):

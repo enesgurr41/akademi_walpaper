@@ -43,6 +43,9 @@ class aka_KidsAdmin(ImageModelAdmin):
 class tavan_KaplamaAdmin(ImageModelAdmin):
     pass
 
+class citalama_DekorAdmin(ImageModelAdmin):
+    pass
+
 admin.site.register(akadem1_Model, akadem1_ModelAdmin)
 admin.site.register(akadem2_Model, akadem2_ModelAdmin)
 admin.site.register(akadem3_Model, akadem3_ModelAdmin)
@@ -53,5 +56,5 @@ admin.site.register(poster_Model, poster_ModelAdmin)
 admin.site.register(blog_Model, blog_ModelAdmin)
 admin.site.register(stropiyer_Model, stropiyer_ModelAdmin)
 admin.site.register(tavan_Kaplama, tavan_KaplamaAdmin)
-admin.site.register(citalama_Dekor)
+admin.site.register(citalama_Dekor, citalama_DekorAdmin)
 admin.site.register(aka_Kids, aka_KidsAdmin)
