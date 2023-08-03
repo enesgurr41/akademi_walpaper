@@ -43,19 +43,19 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
+        {% for tavan in tavankaplamalari %}
           <div class="col-lg-4 col-md-6 portfolio-wrap filter-duz">
             <div class="portfolio-item">
-              <img src="{% static 'img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+              <img src="{{ tavan.image.url }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h3>₺350</h3>
+                <h3>{{ tavan.price }}</h3>
                 <div>
-                  <a href="{% static 'img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="₺350"><i class="bx bx-plus"></i></a>
+                  <a href="{{ tavan.image.url }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{tavan.title}}"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
+        {% endfor %}
         </div>
 
       </div>

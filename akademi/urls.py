@@ -19,6 +19,7 @@ urlpatterns = [
     path("iletisim", views.iletisim, name="iletisim"),
     path("blog", views.blog, name="blog"),
     path("avcilar-duvar-kagidi-deposu-poster", views.poster, name="avcilar_duvar_kagidi-deposu-poster"),
+    path("avcilar-duvar-kagidi-deposu-akakids", views.akakids, name="avcilar_duvar_kagidi-deposu-akakids"),
     
 ]
 

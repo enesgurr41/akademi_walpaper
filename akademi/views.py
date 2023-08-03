@@ -9,6 +9,8 @@ from .models import serisonu_Model
 from .models import blog_Model
 from .models import poster_Model
 from .models import stropiyer_Model
+from .models import aka_Kids
+from .models import tavan_Kaplama
 
 data1 = {
     "akadem1": [
@@ -167,11 +169,28 @@ data9 = {
         {
             "image": "/stropiyer_photo/stropiyer.jpg",
             "title": "Stropiyer",
+            "category": "gobek",
             "description": "description yazısı"
         },
         {
             "image": "/stropiyer_photo/stropiyer1.jpg",
             "title": "Stropiyer1",
+            "category": "gobek",
+            "description": "description yazısı"
+        }
+    ]
+}
+
+data10 = {
+    "akakids": [
+        {
+            "image": "/akakids_photo/akakids.jpg",
+            "title": "Akakids",
+            "description": "description yazısı"
+        },
+        {
+            "image": "/akakids_photo/akakids1.jpg",
+            "title": "Akakids1",
             "description": "description yazısı"
         }
     ]
@@ -244,8 +263,19 @@ def stropiyer(request):
     }
     return render(request, "stropiyer.html", context)
 
+def akakids(request):
+    akakids_photo = aka_Kids.objects.all()
+    context =  {
+        "akakids_photo": akakids_photo
+    }
+    return render(request, "akakids.html", context)
+
 def tavan_kaplama(request):
-    return render(request, "tavan_kaplama.html")
+    tavankaplamalari = tavan_Kaplama.objects.all()
+    context =  {
+        "tavankaplamalari": tavankaplamalari
+    }
+    return render(request, "tavan_kaplama.html", context)
 
 def citalama_dekor(request):
     return render(request, "citalama_dekor.html")

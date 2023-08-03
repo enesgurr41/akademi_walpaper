@@ -86,6 +86,15 @@ class serisonu_Model(models.Model):
 class duvar_Paneli(models.Model):
     
     image = models.ImageField(upload_to='duvar_panelleri/')
+    price = models.CharField(max_length=100)
+    title = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title
+    
+class aka_Kids(models.Model):
+
+    image = models.ImageField(upload_to='akakids_photo/')
     price = models.CharField(max_length=10)
     title = models.CharField(max_length=100)
 
@@ -112,7 +121,11 @@ class blog_Model(models.Model):
 
 
 class stropiyer_Model(models.Model):
+    IMAGE_CHOICES = (
+        ('gobek', 'Göbek'),
+    )
     image = models.ImageField(upload_to='stropiyer_photo/')
+    category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
     title = models.CharField(max_length=100)
 
     def __str__(self):
@@ -120,19 +133,8 @@ class stropiyer_Model(models.Model):
 
 
 class tavan_Kaplama(models.Model):
-    IMAGE_CHOICES = (
-        ('ddsfgz', 'Dsdfgüz'),
-        ('damsdfgask', 'Damsfgask'),
-        ('cizggsili', 'Çizgsgili'),
-        ('tas_gdesen', 'Taşsfg Desen'),
-        ('cocsguk', 'Çocusgk'),
-        ('cicekfg_desen', 'Çiçekag Desen'),
-    )
-
     image = models.ImageField(upload_to='tavan_kaplamalari/')
-    category = models.CharField(choices=IMAGE_CHOICES, max_length=20)
-    price = models.CharField(max_length=10)
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=150)
 
     def __str__(self):
         return self.title
