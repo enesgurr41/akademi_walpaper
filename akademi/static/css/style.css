@@ -611,6 +611,10 @@ section {
   background-color: #f3f8fa;
 }
 
+.section-sale {
+  background-color: #ffffff;
+}
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
@@ -698,18 +702,18 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
+# Sale Section
 --------------------------------------------------------------*/
-.why-us .container {
+.sale_section .container {
   box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
   background: #fff;
 }
 
-.why-us .icon-box+.icon-box {
+.sale_section .icon-box+.icon-box {
   margin-top: 50px;
 }
 
-.why-us .icon-box .icon {
+.sale_section .icon-box .icon {
   float: left;
   display: flex;
   align-items: center;
@@ -721,20 +725,20 @@ section {
   transition: 0.5s;
 }
 
-.why-us .icon-box .icon i {
+.sale_section .icon-box .icon i {
   color: #68A4C4;
   font-size: 32px;
 }
 
-.why-us .icon-box:hover .icon {
+.sale_section .icon-box:hover .icon {
   background: #68A4C4;
 }
 
-.why-us .icon-box:hover .icon i {
+.sale_section .icon-box:hover .icon i {
   color: #fff;
 }
 
-.why-us .icon-box .title {
+.sale_section .icon-box .title {
   margin-left: 95px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -742,31 +746,31 @@ section {
   text-transform: uppercase;
 }
 
-.why-us .icon-box .title a {
+.sale_section .icon-box .title a {
   color: #343a40;
   transition: 0.3s;
 }
 
-.why-us .icon-box .title a:hover {
+.sale_section .icon-box .title a:hover {
   color: #68A4C4;
 }
 
-.why-us .icon-box .description {
+.sale_section .icon-box .description {
   margin-left: 95px;
   line-height: 24px;
   font-size: 14px;
 }
 
-.why-us .video-box {
+.sale_section .video-box {
   position: relative;
 }
 
-.why-us .video-box img {
+.sale_section .video-box img {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.why-us .play-btn {
+.sale_section .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#68A4C4 50%, rgba(104, 164, 196, 0.4) 52%);
@@ -778,7 +782,7 @@ section {
   overflow: hidden;
 }
 
-.why-us .play-btn::after {
+.sale_section .play-btn::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -793,7 +797,7 @@ section {
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.why-us .play-btn::before {
+.sale_section .play-btn::before {
   content: "";
   position: absolute;
   width: 120px;
@@ -811,12 +815,12 @@ section {
   background: rgba(198, 16, 0, 0);
 }
 
-.why-us .play-btn:hover::after {
+.sale_section .play-btn:hover::after {
   border-left: 15px solid #68A4C4;
   transform: scale(20);
 }
 
-.why-us .play-btn:hover::before {
+.sale_section .play-btn:hover::before {
   content: "";
   position: absolute;
   left: 50%;
