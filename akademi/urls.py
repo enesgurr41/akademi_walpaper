@@ -7,7 +7,7 @@ from . import views
 urlpatterns = [
     path("", views.index, name="index"),
     path("ana-sayfa", views.index, name="ana_sayfa"),
-    path("avcilar-duvar-kagidi-deposu-akadem1", views.akadem1, name="avcilar_duvar_kagidi-deposu-akadem1"),
+    path("avcilar-duvar-kagidi-deposu-vinil", views.akadem1, name="avcilar_duvar_kagidi-deposu-vinil"),
     path("avcilar-duvar-kagidi-deposu-akadem2", views.akadem2, name="avcilar_duvar_kagidi-deposu-akadem2"),
     path("avcilar-duvar-kagidi-deposu-akadem3", views.akadem3, name="avcilar_duvar_kagidi-deposu-akadem3"),
     path("avcilar-duvar-kagidi-deposu-akadem4", views.akadem4, name="avcilar_duvar_kagidi-deposu-akadem4"),
